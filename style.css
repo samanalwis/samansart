@@ -1,0 +1,94 @@
+body{
+  padding: 25px;
+}
+.title {
+	color: #5C6AC4;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+nav a:hover {
+    color: #ffcc00;
+}
+header {
+    background-color: #216e59;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+.gallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+    nav a {
+        font-size: 16px;
+        margin: 0 10px;
+    }
+}
+<style>
+  .social-media {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+
+  .social-button {
+    display: inline-block;
+    margin: 0 10px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+  }
+
+  .social-button.facebook {
+    background-color: #3b5998;
+  }
+
+  .social-button.instagram {
+    background-color: #e4405f;
+  }
+
+  .social-button.twitter {
+    background-color: #55acee;
+  }
+
+  .social-button.linkedin {
+    background-color: #0077b5;
+  }
+
+  .social-button:hover {
+    opacity: 0.8;
+  }
+  
+  @media (max-width: 768px) {
+  nav a {
+    font-size: 16px;
+  }
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+
+</style>
